@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Elina Gobenas presentation.</title>
 
 		<meta name="description" content="Projektarbete i Webbteknisk introduktion.">
 		<meta name="author" content="Elina Gobena">
@@ -54,6 +54,7 @@
 					<h2>Agenda</h2>
 					<ol>
 						<li>Frågeställning</li>
+						<li>Semantiska taggar</li>
 						<li>section-taggen</li>
 						<li>article-taggen</li>
 						<li>"Tidningsregeln"</li>
@@ -63,18 +64,26 @@
 
 				<section data-transition="linear" data-background-transition="slide">
 					<h1>Frågeställning</h1>
-					<p>Vad är skillnaden i att använda article-taggen mot <bold>section</bold>-taggen?</p>
+					<p>Vad är skillnaden i att använda article-taggen mot section-taggen?</p>
 
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
 
+			<section data-transition="linear" data-background-transition="slide">
+					<h2>Semantiska taggar</h2>
+					<ul>
+						<li class="fragment">section och article är semantiska taggar, vilket innebär att det tydligt framgår hos webbläsare och utvecklare vad taggarna har för mening.</li>
+						<li class="fragment">div-taggen är inte en semantisk tagg eftersom den inte säger något om innehållet.</li>
+					</ul>
+				</section>
+
 				<section data-transition="linear" data-background-transition="slide">
 					<h2>section-taggen</h2>
 					<ul>
 						<li class="fragment">section-taggen används för att skapa ett block.</li>
-						<li class="fragment">section är ett semantiskt element, man kan säga att innehållet handlar om samma sak.</li>
+						<li class="fragment">Eftersom section är ett semantiskt element, ska innehållet vara relaterat (handla om samma sak).</li>
 					</ul>
 				</section>
 				
@@ -83,15 +92,16 @@
 					<ul>
 						<li class="fragment">Har man en rubrik-tagg behöver egentligen inte en section-tagg användas.</li>
 						<li class="fragment">Texten i section ska vara en generisk överskrift för vad sektionen handlar om.</li>
-						<li class="fragment">En section kan innehålla flera article-taggar, som då fungerar som kategorier till sections innehåll. I en tidnings sportsektion skulle vi då få article-kategorier som "fotboll", "basket" etc.</li>
+						<li class="fragment">En section kan innehålla flera article-taggar, som då fungerar som kategorier till sections innehåll.</li> 
+						<li class="fragment">Ex. i en tidnings sportsektion skulle vi då få article-kategorier som "fotboll", "basket" etc.</li>
 					</ul>
 				</section>
 
 				<section data-transition="linear" data-background-transition="slide">
 					<h2>article-taggen</h2>
 						<ul>
-						<li class="fragment"><bold>article</bold>-taggen används för att skapa tex. blogginlägg eller "news feed".</li>
-						<li class="fragment">Innehåll i <bold>article</bold>-taggar kan skrivas ut eller publiceras någon annanstans.</li>
+						<li class="fragment">article-taggen används för att skapa tex. blogginlägg eller nyhetsartiklar.</li>
+						<li class="fragment">Innehåll i article-taggar kan skrivas ut eller publiceras någon annanstans.</li>
 					</ul>
 				</section>
 				
@@ -100,7 +110,8 @@
 						<ul>
 						<li class="fragment">article kan användas för blogginlägg, men också för statiska delar av en sida, som "om oss"-sidor.</li>
 						<li class="fragment">article-taggar kan innehålla en egen header eller footer.</li>
-						<li class="fragment">article-taggar kan innehålla sections, som fungerar som kapitel inom artikeln. I en tidnings sportsektion, där artikeln handlar om forboll, skulle vi då få sektioner som tex. "damfotboll", "herrfotboll", "juniorfotboll".</li>
+						<li class="fragment">article-taggar kan innehålla sections, som fungerar som kapitel inom artikeln.</li> 
+						<li class="fragment">Ex. i en tidnings sportsektion, där artikeln handlar om fotboll, skulle vi då få sektioner som tex. "damfotboll", "herrfotboll", "juniorfotboll"</li>.
 					</ul>
 				</section>
 				
@@ -111,8 +122,8 @@
 				<section data-transition="linear" data-background-transition="slide">
 				<img src="presbild.png" width="800px" height="500px"/>
 				<ul>
-						<li class="fragment">Det går att nästla <bold>section</bold> i en <bold>article</bold> om artikeln är lång.</li>
-						<li class="fragment">Dock ska man inte överanvända detta eftersom det kan krångla till.</li>
+						<li class="fragment">article är alltså en specifik typ av section, och dessa två används ihop för att organisera innehållet på en sida.</li>
+						<li class="fragment">Tänk till och krångla inte ihop det.</li>
 					</ul>
 				</section>
 				
@@ -127,7 +138,8 @@
 				</section>
 
 					<section>
-				<h3>Tack för att du lyssnade!</h3>
+				<h3>Tack för att ni lyssnade!</h3>
+				<!--http://www.iandevlin.com/blog/2011/04/html5/html5-section-or-article, http://www.w3schools.com/html/html5_semantic_elements.asp, http://html5doctor.com/the-article-element/ -->
 				</section>
 	
 			</div>
